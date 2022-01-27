@@ -1,10 +1,14 @@
 
 buildscript {
 	repositories {
-		jcenter()
+		mavenLocal()
+        mavenCentral()
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        google()
 	}
 	dependencies {
-		classpath 'org.gretty:gretty:3.0.2'
+		classpath 'org.gretty:gretty:3.0.3'
 	}
 }
 apply plugin: "gwt"

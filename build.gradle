@@ -1,10 +1,10 @@
 buildscript {
 	repositories {
 		mavenLocal()
-		mavenCentral()
-		google()
-		maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
-		jcenter()
+        mavenCentral()
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        google()
 	}
 	dependencies {
 		classpath "org.wisepersist:gwt-gradle-plugin:$gwtPluginVersion"
@@ -28,11 +28,12 @@ subprojects {
 	version = '0.0.2-SNAPSHOT'
 	ext.appName = 'GetIntoSpace'
 	repositories {
-		mavenLocal()
-		mavenCentral()
-		maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
-		maven { url 'https://jitpack.io' }
-		jcenter()
+        mavenLocal()
+        mavenCentral()
+        google()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+        maven { url "https://plugins.gradle.org/m2/" }
 	}
 }
 
